@@ -43,7 +43,7 @@ fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
 navigator.geolocation.getCurrentPosition(position => {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
-    fetch(`https://apis.scrimba.com/openweathermap/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial`)
+    fetch(`https://apis.scrimba.com/openweathermap/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric`)
     .then(res => {
         if (!res.ok) {
             throw Error("Weather data not available")
@@ -53,7 +53,7 @@ navigator.geolocation.getCurrentPosition(position => {
     .then(data => {
         document.getElementById("weather").innerHTML = `
         <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"/>
-        <p class="weather-temp">${data.main.temp}°</p>
+        <p class="weather-temp">${data.main.temp}°C</p>
         <p class="weather-city">${data.name}</p>
         `;
     })
