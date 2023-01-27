@@ -1,0 +1,75 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 20px #aaaaaa;
+    font-size: 1.25rem;
+}
+
+main {
+    height:93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+div.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.time {
+    text-align: center;
+    margin-top: -120px;
+}
+
+div#crypto-top {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+div#crypto-top > span {
+    margin-left: 10px;
+}
+
+div#crypto > p {
+
+}
+
+div#weather {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    justify-content: center;
+}
+
+div#weather > img {
+    width: 70px;
+}
+
+p.weather-city {
+    width: 100%;
+    text-align: center;
+}
+
+div#weather > p {
+    margin: 0;
+}
+
+p.weather-temp {
+    font-size: 1.7rem;
+}
